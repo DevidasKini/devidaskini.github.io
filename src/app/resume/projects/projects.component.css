@@ -1,0 +1,72 @@
+
+.card {
+    max-width: auto;
+    margin: auto;
+    text-align: left;
+    background-color: #062c38;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px #030303;
+    padding-left: 10px;
+}
+h1, p, ul, li{
+    color: white;
+}
+button {
+    width: 150px;
+    background-color: #ff8800;
+    color: #062c38;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 90px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #030303;
+  }
+  
+button:hover {
+    color: #ff8800;
+    background-color: transparent;
+    border: 2px solid #ff8800;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #030303;
+}
+.required-field{
+    color: red;
+    font-size: 14px;
+    margin-left: 18px;
+    line-height: 18px;
+}
+.form-error{
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+}
+.validate-button{
+    width: 120px;
+    height: 40px;
+    --background: #ff8800;
+    --border: 2px solid #ff8800;
+    color: #062c38;
+    --border-radius: 50px;
+    --box-shadow: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.validate-button:hover{
+    --background: transparent;
+    border: 2px solid #ff8800;
+    border-radius: 50px;
+    color: #ff8800;
+}
+.error-label{
+    color: red;
+}
+ion-label{
+    text-transform: capitalize !important;
+}
+
+.item{
+    --background: transparent;
+    border: 1px solid #ff8800;
+  }

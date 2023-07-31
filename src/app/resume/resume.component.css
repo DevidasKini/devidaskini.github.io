@@ -1,0 +1,32 @@
+ion-tab-bar {
+  height: 45px !important;
+  justify-content: center !important;
+  background-color: #062c38;
+  box-shadow: 0px 5px 20px #030303;
+}
+ion-tab-button {
+  background-color: #062c38;
+  max-width: fit-content;
+  margin: 20px;
+}
+ion-label {
+  height: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 18px !important;
+  text-align: center;
+}
+ion-tab-button.tab-selected {
+  border-bottom: 4px solid #ff8800;
+}
+ion-label:hover {
+  color: #ff8800;
+}
+ion-tab-button.tab-selected ion-label {
+  font-weight: bold;
+  color: #ff8800;
+}
+
+

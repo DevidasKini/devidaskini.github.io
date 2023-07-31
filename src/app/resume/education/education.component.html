@@ -1,0 +1,22 @@
+<span class="ion-page">
+    <ion-content>
+        <ion-grid class="background">
+            <p class="main-heading ion-padding">Education Details</p>
+            <div >
+                <ion-row class="grid">
+                    <ag-grid-angular
+                        style="width: 96%; height: 250px;"
+                        class="ag-theme-alpine"
+                        [rowData]="rowData"
+                        [columnDefs]="columnDefs"
+                        [modules]="modules"
+                        [gridOptions]="gridOptions"
+                        [defaultColDef]="defaultColDef"
+                        (gridReady)="onGridReady($event)"
+                        >
+                    </ag-grid-angular>
+                </ion-row>
+            </div>
+        </ion-grid>
+    </ion-content>
+</span>

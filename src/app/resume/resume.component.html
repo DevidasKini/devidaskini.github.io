@@ -1,0 +1,39 @@
+<ion-tabs>
+  <ion-tab-bar slot="top">
+    <div class="topBar">
+      <ion-tab-button>
+        <ion-label tab-label text-wrap>
+        </ion-label> </ion-tab-button
+      ><ion-tab-button>
+        <ion-label tab-label text-wrap></ion-label> </ion-tab-button
+      ><ion-tab-button>
+        <ion-label tab-label text-wrap></ion-label> </ion-tab-button
+      ><ion-tab-button>
+        <ion-label tab-label text-wrap></ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <ion-label tab-label text-wrap> Home </ion-label> </ion-tab-button
+      ><ion-tab-button tab="education">
+        <ion-label tab-label text-wrap> Education </ion-label> </ion-tab-button
+      ><ion-tab-button tab="skills">
+        <ion-label tab-label text-wrap> Skills </ion-label>
+      </ion-tab-button>
+    </div>
+  </ion-tab-bar>
+</ion-tabs>
+<div class="menu-icon">
+  <i class="bi bi-list" (click)="openNav()"></i>
+</div>
+<div class="user-icon">
+  <i class="bi bi-person-circle"></i>
+</div>
+<div #mySidebar class="sidebar">
+  <i class="bi bi-x-lg closebtn" (click)="closeNav()"></i> 
+  <div class="profile">
+    <img src="../../assets/images/profile.png" alt="Avatar" class="avatar" />
+    <p class="logo">Profile</p>
+  </div>
+  <a routerLink="home" routerLinkActive="active" (click)="closeNav()"><i class="bi bi-house-fill icons"></i>Home</a>
+  <a routerLink="education" routerLinkActive="active" (click)="closeNav()"><i class="bi bi-mortarboard-fill icons"></i>Education</a>
+  <a routerLink="skills" routerLinkActive="active" (click)="closeNav()"><i class="bi bi-tools icons"></i>Skills</a>
+</div>
